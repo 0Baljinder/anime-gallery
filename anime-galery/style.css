@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    background: linear-gradient(to top left, rgb(0, 0, 67), rgb(97, 0, 97));
+    color: white;
+    font-family: "Roboto", sans-serif;
+    height: 15vh;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+header nav .logo h2::first-letter{
+    color: greenyellow;
+}
+
+header nav ul li a:hover{
+    background: linear-gradient(rgba(0, 0, 72, 0.4));
+}
+
+/* hero */
+
+.hero{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./images/hero.webp");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    gap: 3px;
+
+}
+
+.hero .hero-button{
+    margin: 10px;
+    padding: 10px 17px;
+    border-radius: 8px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+
+.hero .hero-button:hover{
+    background-color: rgb(255, 53, 53);
+    cursor: pointer;
+}
+
+/* main */
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    padding: 50px 0px;
+    gap: 15px;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    background: black;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.7);
+    border-radius: 20px;
+    padding: 10px;
+    aspect-ratio: 2/3;
+    color: white;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), url("./images/sword-art-online.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.2s ease-in-out;
+}
+
+main .card .anime-name{
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card .genre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card .genre p{
+    padding: 0px 5px;
+}
+
+.card .card-button{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(255, 0, 0);
+    color: white;
+    font-weight: 600;
+    margin-top: 5px;
+    transition: 0.3s ease;
+}
+
+.card .card-button:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+:root{
+    --card-overlay: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
+}
+
+.card1{
+    background-image: var(--card-overlay),url("./images/one-piece.webp");
+}
+
+.card2{
+    background-image: var(--card-overlay), url("./images/naruto-shippuden.webp");
+}
+
+.card3{
+    background-image: var(--card-overlay), url("./images/bleach-tybw-arc.webp");
+}
+
+.card4{
+    background-image: var(--card-overlay), url("./images/ReZero.webp");
+}
+
+.card5{
+    background-image: var(--card-overlay), url("./images/tokyo-ghoul.webp");
+}
+
+.card6{
+    background-image: var(--card-overlay), url("./images/witch-hat-atelier.webp");
+}
+
+.card7{
+    background-image: var(--card-overlay), url("./images/wistoria-wand-and-sword.webp");
+
+}
+
+.card8{
+    background-image: var(--card-overlay), url("./images/jujutsu-kaisen.webp");
+}
+
+.card9{
+    background-image: var(--card-overlay), url("./images/demon-slayer.webp");
+}
+
+.card10{
+    background-image: var(--card-overlay), url("./images/chainsaw-man.webp");
+}
+
+.card11{
+    background-image: var(--card-overlay), url("./images/another.webp");
+}
+
+.card12{
+    background-image: var(--card-overlay), url("./images/sword-art-online.webp");
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    color: white;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top: 2px solid rgb(54, 54, 54);
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+footer .web-name h2::first-letter{
+    color: greenyellow;
+}
+
+footer ul li a:hover{
+    background: linear-gradient(rgba(74, 74, 74, 0.4));
+}
+
+footer .connect ul{
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .connect ul li a{
+    padding: 0px;
+}
+
+footer .connect ul li a:hover{
+    background: none;
+}
+
+/* responsive for desktop */
+
+@media (min-width: 600px){
+    .hero h1{
+         font-size: 4.5rem;
+    }
+    .hero p{
+        font-size: 1.3rem;
+    }
+    .hero .hero-button{
+        padding: 15px 40px;
+        font-size: 1.3rem;
+    }
+}
