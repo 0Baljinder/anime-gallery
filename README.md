@@ -5,13 +5,14 @@ Anime Gallery is a responsive website I built using HTML and CSS to practice fro
 ## Screenshots
 
 ### Hero Section
+![Hero Section](screenshots/hero.png)
+
+### Anime Showcase Section
 ![Anime Showcase Section](screenshots/anime-collection.png)
 
 ### Footer & Navigation
 ![Footer & Navigation](screenshots/footer-and-navigation.png)
 
-### Anime Showcase Section
-![Hero Section](screenshots/hero.png)
 ## Features
 
 - Responsive layout
